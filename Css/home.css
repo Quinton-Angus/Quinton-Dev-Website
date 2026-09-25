@@ -1,0 +1,54 @@
+/*/ Hero styling /*/
+
+#mainHeroContainer {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 17.5rem;
+    box-sizing: border-box;
+}
+
+#mainHeroWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#subHero {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+#mainHero {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+#mainHeroAcent {
+    color: #9EA6FF;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-left: 1rem;
+}
+
+/*/ Pixel Art Styling /*/
+
+#pixelArt {
+    width: 100%;
+    height: 20rem;
+    overflow: hidden;
+}
+
+#pixelGrid {
+    display: grid;
+    grid-template-columns: repeat(50, 4rem);
+    grid-template-rows: repeat(5, 4rem);
+}
+
+.pixel {
+    background-color: aqua;
+}
+
+
