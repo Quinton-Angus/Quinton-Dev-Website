@@ -62,7 +62,7 @@ for (let row = 0; row < rows; row++) {
 
     // Sparse at the top.
     // Dense at the bottom.
-    const density = 0.15 + (height * 0.8);
+    const density = 0.2 + (height * 0.8);
 
 
     for (let column = 0; column < columns; column++) {
@@ -93,7 +93,7 @@ for (let row = 0; row < rows; row++) {
         // Only a small number of pixels
         // are coloured.
         const colourChance =
-            0.01 + (height * 0.04);
+            0.075 + (height * 0.04);
 
         if (Math.random() < colourChance) {
 
