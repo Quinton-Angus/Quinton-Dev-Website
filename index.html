@@ -3,8 +3,44 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Quinton Dev — open source software and developer services.">
-        <title>Home | Quinton Dev</title>
+        <meta name="description" content="Quinton Dev is an independent software development studio creating open-source software, developer tools and applications.">
+        <meta name="author" content="Quinton Dev">
+        <meta name="robots" content="index, follow">
+        <link rel="canonical" href="https://quintondev.com/">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Quinton Dev">
+        <meta property="og:title" content="Quinton Dev — Software & Developer Tools">
+        <meta property="og:description" content="Open-source software, developer tools and applications from Quinton Dev.">
+        <meta property="og:url" content="https://quintondev.com/">
+        <meta property="og:image" content="https://quintondev.com/Assets/Favicon.png">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Quinton Dev — Software & Developer Tools">
+        <meta name="twitter:description" content="Open-source software, developer tools and applications from Quinton Dev.">
+        <title>Quinton Dev — Software & Developer Tools</title>
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://quintondev.com/#organization",
+              "name": "Quinton Dev",
+              "url": "https://quintondev.com/",
+              "logo": "https://quintondev.com/Assets/logo.svg",
+              "email": "support@quintondev.com",
+              "description": "Independent software development studio creating open-source software, developer tools and applications.",
+              "sameAs": ["https://github.com/Quinton-Angus"]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://quintondev.com/#website",
+              "name": "Quinton Dev",
+              "url": "https://quintondev.com/",
+              "publisher": {"@id": "https://quintondev.com/#organization"}
+            }
+          ]
+        }
+        </script>
         <link rel="icon" href="./Assets/Favicon.png">
         <link rel="stylesheet" href="./Css/index.css">
         <link rel="stylesheet" href="./Css/home.css">
@@ -15,6 +51,7 @@
             <a href="./"><img src="./Assets/logo.svg" id="headerLogo" alt="Quinton Dev"></a>
             <div id="headerLinks">
                 <a class="headerLinkActive" href="./">Home</a>
+                <a class="headerLink" href="#about">About</a>
                 <a class="headerLink" href="#services">Services</a>
                 <a class="headerLink" href="./privacy.html">Privacy</a>
                 <a class="headerLink" href="./terms.html">Terms</a>
@@ -36,6 +73,14 @@
             <div id="pixelArt">
                 <div id="pixelGrid"></div>
             </div>
+
+            <section id="about" style="max-width:1000px;margin:4rem auto;padding:0 5rem;">
+                <h1 style="font-size:2.2rem;margin-bottom:1rem;">Quinton Dev</h1>
+                <p style="font-size:1.35rem;line-height:1.7;color:#b0b0b0;max-width:760px;">
+                    Quinton Dev is an independent software development studio focused on open-source software,
+                    developer tools and applications. Explore our projects, services and developer-focused products below.
+                </p>
+            </section>
 
             <section id="services" style="max-width:1000px;margin:4rem auto;padding:0 5rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;">
                 <a href="./dock/" style="text-decoration:none;color:inherit;border:1px solid #333;padding:2rem;border-radius:4px;">
