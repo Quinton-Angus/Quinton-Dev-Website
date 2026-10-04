@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Quinton Dev — open source software and developer services.">
         <title>Home | Quinton Dev</title>
         <link rel="icon" href="./Assets/Favicon.png">
         <link rel="stylesheet" href="./Css/index.css">
@@ -11,32 +12,52 @@
 
     <body>
         <header>
-            <img src="./Assets/logo.svg" id="headerLogo">
+            <a href="./"><img src="./Assets/logo.svg" id="headerLogo" alt="Quinton Dev"></a>
             <div id="headerLinks">
-                <a class="headerLinkActive">Home</a>
-                <a class="headerLink">Projects</a>
-                <a class="headerLink">Contact</a>
-                <a class="headerLink">Account</a>
+                <a class="headerLinkActive" href="./">Home</a>
+                <a class="headerLink" href="#services">Services</a>
+                <a class="headerLink" href="./privacy.html">Privacy</a>
+                <a class="headerLink" href="./terms.html">Terms</a>
             </div>
             <div id="accountHero">
-                <div id="accountSignUpbtn">Sign up</div>
-                <div id="accountLoginBtn">Log in</div>
+                <a id="accountSignUpbtn" href="https://connect.quintondev.com/">Sign up</a>
+                <a id="accountLoginBtn" href="./login/">Log in</a>
             </div>
         </header>
-       <div id="mainHeroContainer">
-            <div id="mainHeroWrapper">
-                <div id="subHero">Open source software.</div>
-                <div id="mainHero">Made for<span id="mainHeroAcent">Developers</span>.</div>
+
+        <main>
+            <div id="mainHeroContainer">
+                <div id="mainHeroWrapper">
+                    <div id="subHero">Open source software.</div>
+                    <div id="mainHero">Made for<span id="mainHeroAcent">Developers</span>.</div>
+                </div>
             </div>
-       </div>
-       <div id="pixelArt">
-            <div id="pixelGrid"></div>
-       </div>
 
-       </div> 
+            <div id="pixelArt">
+                <div id="pixelGrid"></div>
+            </div>
 
-       <script src="./Scripts/pixelArt.js"></script>
+            <section id="services" style="max-width:1000px;margin:4rem auto;padding:0 5rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;">
+                <a href="./dock/" style="text-decoration:none;color:inherit;border:1px solid #333;padding:2rem;border-radius:4px;">
+                    <strong style="font-size:1.8rem;">Build Dock</strong>
+                    <p style="font-size:1.3rem;color:#808080;">Build and manage developer projects.</p>
+                </a>
+                <a href="https://connect.quintondev.com/" style="text-decoration:none;color:inherit;border:1px solid #333;padding:2rem;border-radius:4px;">
+                    <strong style="font-size:1.8rem;">Dev Connect</strong>
+                    <p style="font-size:1.3rem;color:#808080;">Connect to Quinton Dev services.</p>
+                </a>
+            </section>
+        </main>
 
+        <footer style="max-width:1000px;margin:4rem auto;padding:2rem 5rem;border-top:1px solid #333;display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap;">
+            <span style="font-size:1.2rem;color:#808080;">© Quinton Dev</span>
+            <span style="display:flex;gap:1.5rem;">
+                <a href="./privacy.html" style="font-size:1.2rem;color:#808080;">Privacy</a>
+                <a href="./terms.html" style="font-size:1.2rem;color:#808080;">Terms</a>
+            </span>
+        </footer>
+
+        <script src="./Scripts/pixelArt.js"></script>
     </body>
 
 </html>
